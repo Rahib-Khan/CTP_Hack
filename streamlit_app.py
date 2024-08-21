@@ -26,8 +26,9 @@ with pages:
             label_visibility="collapsed",
             horizontal=True,
         )
-        if college == "Queens College":
-            st.write("How often do you use Streamlit?")
+        if college == "Queens College" and aid == "Child Care":
+            pages.current == 1
+            st.write("Child Development Center Room 245, Kiely Hall, 65-30 Kissena Blvd, Flushing, NY 11367 Center Phones: 718-997-5885 Center Director: Eric Urevich Hours: Mon to Thu 9AM-5PM Serves: 30 Months to 10 Years Old")
             survey.select_slider(
                 "st_frequency",
                 options=["Every Day", "Every week", "Every Month", "Once a year", "Rarely"],
