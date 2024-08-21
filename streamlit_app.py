@@ -6,7 +6,7 @@ pages = survey.pages(2, on_submit=lambda: st.success("Your responses have been r
 with pages:
     if pages.current == 0:
         st.write("What College do you go to?")
-        used_before = survey.radio(
+        college = survey.radio(
             "College",
             options=["Baruch college","Borough of Manhattan CC", "Bronx Community College","Brooklyn College",
                     "The City College of New York" ,"The College of Staten Island","The Graduate Center", "Guttman Community College","Craig Newmark Graduate School of Journalism at CUNY","CUNY Graduate School of Public Health and Policy" ,"CUNY School of Labor & Urban Studies", "Hostos Community College", "Hunter College", "John Jay College of Criminal Justice"
@@ -18,14 +18,22 @@ with pages:
             label_visibility="collapsed",
             horizontal=True,
         )
-        if used_before == "Yes":
+        st.write("What Type of Aid Are you looking for?")
+        aid = survey.radio(
+            "Issues",
+            options=["Food Insecurity", "Housing Instability", "Child Care", "Career Development", "Disability Services", "Mental Health", "Addiction Services", "Health And Wellness"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
+        if college == "Queens College":
             st.write("How often do you use Streamlit?")
             survey.select_slider(
                 "st_frequency",
                 options=["Every Day", "Every week", "Every Month", "Once a year", "Rarely"],
                 label_visibility="collapsed",
             )
-        elif used_before == "No":
+        elif college == "No":
             st.write("Have you used other dashboarding tools?")
             used_other = survey.radio(
                 "used_other",
