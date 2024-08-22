@@ -80,5 +80,5 @@ elif college == "Queens College":
     st.write("Queens College selected.")
 elif college == "Queensborough Community College":
     st.write("Queensborough Community College selected.")
-if college == "York College":
+elif college == "York College":
     st.write("York College selected.")
