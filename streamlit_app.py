@@ -14,8 +14,8 @@ with pages:
                     ,"CUNY School of Law","Lehman College"
                     ,"Medgar Evers College","NY City College of Technology"
                     ,"Queens College","Queensborough Community College","School of Professional Studies","York  college" ],
-            index=0,
-            label_visibility="collapsed",
+            index=None,
+            label_visibility="hidden",
             horizontal=True,
         )
         st.write("What Type of Aid Are you looking for?")
@@ -27,13 +27,10 @@ with pages:
             horizontal=True,
         )
         if college == "Queens College" and aid == "Child Care":
-            pages.current == 1
-            st.write("Child Development Center Room 245, Kiely Hall, 65-30 Kissena Blvd, Flushing, NY 11367 Center Phones: 718-997-5885 Center Director: Eric Urevich Hours: Mon to Thu 9AM-5PM Serves: 30 Months to 10 Years Old")
-            survey.select_slider(
-                "st_frequency",
-                options=["Every Day", "Every week", "Every Month", "Once a year", "Rarely"],
-                label_visibility="collapsed",
-            )
+            pages.next()
+            url = "https://www.cuny.edu/academics/current-initiatives/office-of-early-childhood-initiatives/childhood/#1675966909601-e24790e9-04c7:~:text=Queens%20College-,Child%20Development%20Center,-Room%20245%2C%20Kiely"
+            st.write("check out this [Child Development Center](%s)" % url)
+            
         elif college == "No":
             st.write("Have you used other dashboarding tools?")
             used_other = survey.radio(

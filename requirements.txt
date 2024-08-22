@@ -1,0 +1,4 @@
+in terminal
+
+pip install streamlit
+pip install streamlit-survey
