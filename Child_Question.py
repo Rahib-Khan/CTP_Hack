@@ -23,20 +23,15 @@ college = survey.radio("College",
     "College of Staten Island",
     "CUNY Graduate Center",
     "CUNY School of Law",
-    "CUNY School of Professional Studies",
-    "CUNY School of Public Health",
-    "Guttman Community College",
     "Hostos Community College",
     "Hunter College",
     "John Jay College of Criminal Justice",
     "Kingsborough Community College",
     "LaGuardia Community College",
     "Lehman College",
-    "Macaulay Honors College",
     "Medgar Evers College",
     "New York City College of Technology",
     "Queens College",
-    "Queensborough Community College",
     "York College"
 ]
 ,
@@ -46,48 +41,165 @@ college = survey.radio("College",
         )
 
 if college == "Baruch College":
-    st.write("Baruch College selected.")
+    st.write("Is your child between the ages of 4 Months and 5 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "Borough of Manhattan Community College":
-    st.write("Borough of Manhattan Community College selected.")
+    st.write("Is your child between the ages of 3 Months and 12 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
+    
 elif college == "Bronx Community College":
-    st.write("Bronx Community College selected.")
+    st.write("Is your child between the ages of 6 weeks and 12 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "Brooklyn College":
-    st.write("Brooklyn College selected.")
+    st.write("Is your child between the ages of 4 Months and 5 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "City College of New York":
-    st.write("City College of New York selected.")
+    st.write("Is your child between the ages of 4 Months and 5 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "College of Staten Island":
-    st.write("College of Staten Island selected.")
+    st.write("Is your child between the ages of 6 Months and 9 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "CUNY Graduate Center":
-    st.write("CUNY Graduate Center selected.")
+    st.write("Is your child between the ages of 2 Years and 5 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "CUNY School of Law":
-    st.write("CUNY School of Law selected.")
-elif college == "CUNY School of Professional Studies":
-    st.write("CUNY School of Professional Studies selected.")
-elif college == "CUNY School of Public Health":
-    st.write("CUNY School of Public Health selected.")
-elif college == "Guttman Community College":
-    st.write("Guttman Community College selected.")
+    st.write("Is your child between the ages of 6 Months and 12 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "Hostos Community College":
-    st.write("Hostos Community College selected.")
+    st.write("Is your child between the ages of 6 Weeks and 5 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "Hunter College":
-    st.write("Hunter College selected.")
+    st.write("Is your child between the ages of 2 Years and 12 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "John Jay College of Criminal Justice":
-    st.write("John Jay College of Criminal Justice selected.")
+    st.write("Is your child between the ages of 6 Months and 5 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "Kingsborough Community College":
-    st.write("Kingsborough Community College selected.")
+    st.write("Is your child between the ages of 2 Years & 10 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "LaGuardia Community College":
-    st.write("LaGuardia Community College selected.")
+    st.write("Is your child between the ages of 6 Months and 12 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "Lehman College":
-    st.write("Lehman College selected.")
-elif college == "Macaulay Honors College":
-    st.write("Macaulay Honors College selected.")
+    st.write("Is your child between the ages of 2 Years and 12 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "Medgar Evers College":
-    st.write("Medgar Evers College selected.")
+    st.write("Is your child between the ages of 2 Years and 12 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "New York City College of Technology":
-    st.write("New York City College of Technology selected.")
+    st.write("Is your child between the ages of 2 Years and 12 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
 elif college == "Queens College":
-    st.write("Queens College selected.")
-elif college == "Queensborough Community College":
-    st.write("Queensborough Community College selected.")
-if college == "York College":
-    st.write("York College selected.")
+    st.write("Is your child between the ages of 30 Months and 10 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
+elif college == "York College":
+    st.write("Is your child between the ages of 6 Months and 10 Years?")
+    confirm = survey.radio(
+            "Confirm",
+            options=["Yes", "No"],
+            index=0,
+            label_visibility="collapsed",
+            horizontal=True,
+        )
