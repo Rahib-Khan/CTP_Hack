@@ -50,6 +50,13 @@ if aid == "Child Care":
                 label_visibility="collapsed",
                 horizontal=True,
             )
+        if confirm == "Yes":
+            Center_url= "https://studentaffairs.baruch.cuny.edu/early-learning-center/"
+            Location_url = "https://www.google.com/maps/place/1+Bernard+Baruch+Way,+New+York,+NY+10010/@40.740181,-73.9841493,18.42z/data=!4m5!3m4!1s0x89c259a752b00719:0xf5c500d480255408!8m2!3d40.74016!4d-73.9833505?shorturl=1"
+            st.write("The Child Care Center at Baruch College is Called the [Early Learning Center](%s)" % Center_url)
+            st.write("Located at [Box G-1063, 1 Bernard Baruch Way, New York, NY 10010](%s)" % Location_url)
+            st.write("Center Numbers: 212-387-1420 or 212-387-1421 | C: 646-261-2451")
+            st.write("The Center Director is Lorraine Mondesir")
     elif college == "Borough of Manhattan Community College":
         st.write("Is your child between the ages of 3 Months and 12 Years?")
         confirm = survey.radio(
