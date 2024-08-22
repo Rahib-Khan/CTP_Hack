@@ -2,12 +2,13 @@ import streamlit as st
 import streamlit_survey as ss
 
 survey = ss.StreamlitSurvey("Survey Example - Advanced Usage")
-
+# Function to redirect students to other childcare programs
 other_resources= "https://www.cuny.edu/academics/current-initiatives/office-of-early-childhood-initiatives/childhood/#1677039908238-a0b79be9-e9c2"
 def no(other_resources):
     st.write("Sorry. Unfortunatley it looks like your College doesn't provide a direct Child Care service that fits your needs. However, there are other programs that may be able to help you.")
     st.write("Please follow this [LINK](%s)" % other_resources)
 
+#How to start every path for each question
 st.write("What Type of Aid Are you looking for?")
 aid = survey.radio("Issues",
     options=["Food Insecurity", "Housing Instability", "Child Care", "Career Development", "Disability Services", "Mental Health", "Addiction Services", "Health And Wellness"],
