@@ -396,8 +396,9 @@ def cq():
                     horizontal=True,
                 )
             if confirm == "Yes":
+                Center_url = "https://www.qc.cuny.edu/chdc/"
                 Location_url = "https://goo.gl/maps/EH5gWApauWWfSW5j7"
-                st.write("The Child Care Center for Queens College is Called the Child Development Center")
+                st.write("The Child Care Center for Queens College is Called the [Child Development Center](%s)" % Center_url)
                 st.write("Located at [Room 245, Kiely Hall, 65-30 Kissena Blvd, Flushing, NY 11367](%s)" % Location_url)
                 st.write("Center Numbers: 718-997-5885")
                 st.write("The Center Director is Eric Urevich")
