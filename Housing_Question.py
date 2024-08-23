@@ -12,6 +12,7 @@ aid = survey.radio("Issues",
         horizontal=True,
     )
 
+#For colleges with no direct housing aid
 other_housing_resources = "https://www.nyc.gov/site/hra/help/affordable-housing.page"
 def no_housing_resource():
     st.write("Sorry, the specified college doesn't provide direct housing relief. Here are some other programs")
@@ -147,23 +148,3 @@ if aid == "Housing Instability":
             st.write("Check out this housing emergency fund by York:](%s)" % york_petrie_fund_url)
             st.write("Check out the Educational Housing Services for Yoro](%s)" % york_ehs_url)
             st.write("Check out what the York College Learning Center offers](%s)" % york_housing_connect_url)
-
-
-
-
-
-
-        
-
-
-
-
-
-
-        
-            
-
-
-
-            
-
