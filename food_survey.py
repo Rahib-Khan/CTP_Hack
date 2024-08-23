@@ -1,6 +1,5 @@
 import streamlit as st
 import streamlit_survey as ss
-import First
 
 class cuny_pantry:
     def __init__(self, college, website, location, email, phone, appointment):
@@ -17,8 +16,8 @@ lc_pantry = cuny_pantry('Lehman College', 'https://www.lehman.edu/student-leader
 bc_pantry = cuny_pantry('Brooklyn College', 'https://www.brooklyn.cuny.edu/web/about/offices/studentaffairs/student-support-services/food-pantry.php', 'Student Center, Room 524', 'civicengagement@brooklyn.cuny.edu', '', '')
 kcc_pantry = cuny_pantry('Kingsborough Community College', 'https://www.kbcc.cuny.edu/studres/cunyedge.html', 'CUNY EDGE, T4-216 (Food for Thought)', '718-368-4660', '', '')
 mec_pantry = cuny_pantry('Medgar Evers College', 'https://ares.mec.cuny.edu/student-affairs/transition-academy/', 'Transition Academy, 1150 Carroll Street (Room C-307)', 'transitionacademy@mec.cuny.edu', '718-270-6988', '')
-nct_pantry = cuny_pantry('NYC College of Technology (City Tech)', 'https://www.citytech.cuny.edu/student-life/food-pantry.aspx', 'Yellowjacket N.E.S.T. (Nutrition for Education and Student Achievement) Food Pantry at City Tech, 300 Jay Street, Student Life, G-516.', '', 'https://calendly.com/geramirez-1/pantryhttps://calendly.com/geramirez-1/pantry')
-bar_pantry = cuny_pantry('Baruch College', 'https://studentaffairs.baruch.cuny.edu/dean-of-students/bearcat-food-pantry/', 'deanofstudents@baruch.cuny.edu', '6463124570', 'https://baruch.az1.qualtrics.com/jfe/form/SV_0fwrpgDtATh3qC2') 
+nct_pantry = cuny_pantry('NYC College of Technology (City Tech)', 'https://www.citytech.cuny.edu/student-life/food-pantry.aspx', 'Yellowjacket N.E.S.T. (Nutrition for Education and Student Achievement) Food Pantry at City Tech, 300 Jay Street, Student Life, G-516.', '', '', 'https://calendly.com/geramirez-1/pantryhttps://calendly.com/geramirez-1/pantry')
+bar_pantry = cuny_pantry('Baruch College', 'https://studentaffairs.baruch.cuny.edu/dean-of-students/bearcat-food-pantry/', 'deanofstudents@baruch.cuny.edu', '', '6463124570', 'https://baruch.az1.qualtrics.com/jfe/form/SV_0fwrpgDtATh3qC2') 
 bmcc_pantry = cuny_pantry('Borough of Manhattan Community College', 'https://www.bmcc.cuny.edu/student-affairs/arc/panther-pantry/', 'Advocacy and Resource Center, Panther Pantry, Room S-230', 'arc@bmcc.cuny.edu', '212-220-8195', '')
 ccny_pantry = cuny_pantry('City College of New York', 'https://www.ccny.cuny.edu/bennysfoodpantry', 'NAC Ground Floor', 'bennysfoodpantry@ccny.cuny.edu', '', 'https://calendly.com/bennysfoodpantry/benny-s-food-pantry-appointment-system?month=2023-03 or stop by Mon-Fri 10am-6pm.') 
 gutt_pantry =  cuny_pantry('Guttman Community College', 'https://guttman.cuny.edu/students/connect-center/food-resources/', 'The Connect Center, Room LL020/021', 'connectcenter@guttman.cuny.edu', 'connectcenter@guttman.cuny.edu', '646-313-8857')
@@ -73,64 +72,10 @@ if aid == "Food Insecurity":
                     label_visibility="hidden",
                     horizontal=True,
                 )
+        
         if college == "Baruch College":
-
-        elif college == "Borough of Manhattan Community College":
-        
-        elif college == "Bronx Community College":
-            
-        elif college == "Brooklyn College":
-          
-        elif college == "City College of New York":
-            
-        elif college == "College of Staten Island":
-           
-        elif college == "CUNY Graduate Center":
-           
-        elif college == "CUNY School of Law":
-            
-        elif college == "Hostos Community College":
-
-        
-        elif college == "Hunter College":
-          
-        
-        elif college == "John Jay College of Criminal Justice":
-        
-        elif college == "Kingsborough Community College":
-            
-        
-        elif college == "LaGuardia Community College":
-          
-        elif college == "Lehman College":
-          
-
-        elif college == "Medgar Evers College":
-           
-        
-        elif college == "New York City College of Technology":
-           
-        elif college == "Queens College":
-            
-        
-        elif college == "York College":
-           
-
-
-
-
-
-        
-
-
-
-
-
-
-        
-            
-
-
-
-            
-
+                st.write('Website: '+bar_pantry.website)
+                st.write('Location: '+bar_pantry.location)
+                st.write('Email: '+bar_pantry.email)
+                st.write('Phone: '+bar_pantry.phone)
+                st.write('Appointment: '+bar_pantry.appointment)
