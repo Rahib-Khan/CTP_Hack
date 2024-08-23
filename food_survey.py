@@ -1,40 +1,6 @@
-from bs4 import BeautifulSoup
-from bs4 import SoupStrainer
-import requests
-import re
-
-CUNY_PANTRIES_WEBSITE = 'https://www.healthycuny.org/cuny-food-pantries'
-
-response = requests.get(CUNY_PANTRIES_WEBSITE)
-if response.ok == False:
-    print("CUNY Food Pantries website is down.")
-
-cuny_pantries_html = response.text
-
-hrefs = SoupStrainer('a', href=True)
-h1s = SoupStrainer('p')
-
-hrefs_html = BeautifulSoup(cuny_pantries_html, 'lxml', parse_only=hrefs)
-h1s_html = BeautifulSoup(cuny_pantries_html, 'lxml', parse_only=h1s)
-
-websites_html = hrefs_html.find_all(href=re.compile('https://'))
-telephones_html = hrefs_html.find_all(href=re.compile('tel:'))
-emails_html = hrefs_html.find_all(href=re.compile('mailto:'))
-
-websites, telephones, emails, locations = [], [], [], []
-
-for website in websites_html:
-    websites.append(website.get('href'))
-
-for telephone in telephones_html:
-    telephones.append(telephone.get_text())
-
-for email in emails_html:
-    emails.append(email.get_text())
-
-#print(websites)
-#print(telephones)
-#print(emails)
+import streamlit as st
+import streamlit_survey as ss
+import First
 
 class cuny_pantry:
     def __init__(self, college, website, location, email, phone, appointment):
@@ -67,3 +33,104 @@ y_pantry =  cuny_pantry('York College', 'https://www.york.cuny.edu/news/the-food
 csi_pantry = cuny_pantry('College of Staten Island', 'http://csitoday.com/2016/02/csi-food-pantry/', 'Office of Student Life in the Campus Center, 1C-201', 'studentlife@csi.cuny.edu', '718-982-3088', '')
 
 cuny_pantries = [bcc_pantry, hcc_pantry, lc_pantry, bc_pantry, kcc_pantry, mec_pantry, nct_pantry, bar_pantry, bmcc_pantry, ccny_pantry, gutt_pantry, hunt_pantry, jj_pantry, lcc_pantry, qc_pantry, sj_pantry, sl_pantry, y_pantry, csi_pantry]
+
+survey = ss.StreamlitSurvey("Survey Example - Advanced Usage")
+
+st.write("What Type of Aid Are you looking for?")
+aid = survey.radio("Issues",
+        options=["Food Insecurity", "Housing Instability", "Child Care", "Career Development", "Disability Services", "Mental Health", "Addiction Services", "Health And Wellness"],
+        index= None,
+        label_visibility="collapsed",
+        horizontal=True,
+    )
+
+if aid == "Food Insecurity":
+        st.write("What College do you go to?")
+        college = survey.radio("College",
+                    options = [
+            "Baruch College",
+            "Borough of Manhattan Community College",
+            "Bronx Community College",
+            "Brooklyn College",
+            "City College of New York",
+            "College of Staten Island",
+            "CUNY Graduate Center",
+            "CUNY School of Law",
+            "Hostos Community College",
+            "Hunter College",
+            "John Jay College of Criminal Justice",
+            "Kingsborough Community College",
+            "LaGuardia Community College",
+            "Lehman College",
+            "Medgar Evers College",
+            "New York City College of Technology",
+            "Queens College",
+            "York College", 
+            "Other"
+                    ]
+        ,
+                    index=None,
+                    label_visibility="hidden",
+                    horizontal=True,
+                )
+        if college == "Baruch College":
+
+        elif college == "Borough of Manhattan Community College":
+        
+        elif college == "Bronx Community College":
+            
+        elif college == "Brooklyn College":
+          
+        elif college == "City College of New York":
+            
+        elif college == "College of Staten Island":
+           
+        elif college == "CUNY Graduate Center":
+           
+        elif college == "CUNY School of Law":
+            
+        elif college == "Hostos Community College":
+
+        
+        elif college == "Hunter College":
+          
+        
+        elif college == "John Jay College of Criminal Justice":
+        
+        elif college == "Kingsborough Community College":
+            
+        
+        elif college == "LaGuardia Community College":
+          
+        elif college == "Lehman College":
+          
+
+        elif college == "Medgar Evers College":
+           
+        
+        elif college == "New York City College of Technology":
+           
+        elif college == "Queens College":
+            
+        
+        elif college == "York College":
+           
+
+
+
+
+
+        
+
+
+
+
+
+
+        
+            
+
+
+
+            
+
