@@ -170,7 +170,6 @@ if aid == "Food Insecurity":
             "Brooklyn College",
             "City College of New York",
             "College of Staten Island",
-            "CUNY Graduate Center",
             "CUNY School of Law",
             "Hostos Community College",
             "Hunter College",
@@ -182,7 +181,6 @@ if aid == "Food Insecurity":
             "New York City College of Technology",
             "Queens College",
             "York College", 
-            "Other"
                     ]
         ,
                     index=None,
@@ -192,16 +190,16 @@ if aid == "Food Insecurity":
         
         if college == "Bronx Community College":
                 st.write('[2024 Food Pantry Schedule](%s)' % 'https://www.bcc.cuny.edu/wp-content/uploads/2024/08/fall-2024-food-pantry-schedule-final-dd-1200-792x1024.jpg')
-                if bmcc_pantry.website:
-                        st.write('Website: '+bmcc_pantry.website)
-                if bmcc_pantry.location:
-                        st.write('Location: '+bmcc_pantry.location)
-                if bmcc_pantry.email:
-                        st.write('Email: '+bmcc_pantry.email)
-                if bmcc_pantry.phone:
-                        st.write('Phone: '+bmcc_pantry.phone)
-                if bmcc_pantry.appointment:
-                        st.write('[Make an appointment](%s)' % bmcc_pantry.appointment)        
+                if bcc_pantry.website:
+                        st.write('Website: '+bcc_pantry.website)
+                if bcc_pantry.location:
+                        st.write('Location: '+bcc_pantry.location)
+                if bcc_pantry.email:
+                        st.write('Email: '+bcc_pantry.email)
+                if bcc_pantry.phone:
+                        st.write('Phone: '+bcc_pantry.phone)
+                if bcc_pantry.appointment:
+                        st.write('[Make an appointment](%s)' % bcc_pantry.appointment)        
 
         elif college == "Baruch College":
                 if bar_pantry.website:
@@ -218,7 +216,7 @@ if aid == "Food Insecurity":
         elif college == "Borough of Manhattan Community College":
                 if bmcc_pantry.website:
                         st.write('Website: '+bmcc_pantry.website)
-                if bmcc_pantry.location
+                if bmcc_pantry.location:
                         st.write('Location: '+bmcc_pantry.location)
                 if bmcc_pantry.email:
                         st.write('Email: '+bmcc_pantry.email)
@@ -260,7 +258,7 @@ if aid == "Food Insecurity":
                         st.write('Email: '+csi_pantry.email)
                 if csi_pantry.phone: 
                         st.write('Phone: '+csi_pantry.phone)
-                if csi_pantry.appointment
+                if csi_pantry.appointment:
                         st.write('Appointment: '+csi_pantry.appointment)
            
         elif college == "CUNY School of Law":
