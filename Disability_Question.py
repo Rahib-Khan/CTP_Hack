@@ -13,7 +13,7 @@ aid = survey.radio("Issues",
     )
 
 
-#Housing Instability Questionnaires
+#Disability Questionnaire
 if aid == "Disability Services":
     confirm1 = survey.checkbox("NYC Disability Resources")
     confirm2 = survey.checkbox("CUNY Disability Programs")
@@ -92,7 +92,7 @@ if aid == "Disability Services":
             st.write("Check out the Office of Accessibility at Hunter College](%s)" % hunter_disability_url)
         
         elif college == "John Jay College of Criminal Justice":
-            johnjay_disability_url = https://www.jjay.cuny.edu/student-life/wellness-center/accessibility-services
+            johnjay_disability_url = "https://www.jjay.cuny.edu/student-life/wellness-center/accessibility-services"
             st.write("Check out the Accessibility Services at John Jay](%s)" % johnjay_disability_url)
         
         elif college == "Kingsborough Community College":
