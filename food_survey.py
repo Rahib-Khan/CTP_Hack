@@ -21,7 +21,7 @@ bar_pantry = cuny_pantry('Baruch College', 'https://studentaffairs.baruch.cuny.e
 bmcc_pantry = cuny_pantry('Borough of Manhattan Community College', 'https://www.bmcc.cuny.edu/student-affairs/arc/panther-pantry/', 'Advocacy and Resource Center, Panther Pantry, Room S-230', 'arc@bmcc.cuny.edu', '212-220-8195', '')
 ccny_pantry = cuny_pantry('City College of New York', 'https://www.ccny.cuny.edu/bennysfoodpantry', 'NAC Ground Floor', 'bennysfoodpantry@ccny.cuny.edu', '', 'https://calendly.com/bennysfoodpantry/benny-s-food-pantry-appointment-system?month=2023-03 or stop by Mon-Fri 10am-6pm.') 
 gutt_pantry =  cuny_pantry('Guttman Community College', 'https://guttman.cuny.edu/students/connect-center/food-resources/', 'The Connect Center, Room LL020/021', 'connectcenter@guttman.cuny.edu', 'connectcenter@guttman.cuny.edu', '646-313-8857')
-hunt_pantry = cuny_pantry('Hunter College', 'https://ww2.hunter.cuny.edu/students/student-life/emergency-support-and-resources/', 'Main Campus 68th Street, West Building Room B103\n Brookdale Campus, Main Floor Lobby', 'rt2049@hunter.cuny.edu', '', '')
+hc_pantry = cuny_pantry('Hunter College', 'https://ww2.hunter.cuny.edu/students/student-life/emergency-support-and-resources/', 'Main Campus 68th Street, West Building Room B103\n Brookdale Campus, Main Floor Lobby', 'rt2049@hunter.cuny.edu', '', '')
 jj_pantry = cuny_pantry('John Jay College', 'https://www.jjay.cuny.edu/john-jay-food-bank', 'Wellness Center/Single Stop Rm L.68.13', 'JJCFoodBank@jjay.cuny.edu', '212-237-8052', '')
 lcc_pantry = cuny_pantry('LaGuardia Community College', 'https://www.laguardia.edu/cares/', 'LaGuardia Cares, Room C-107', 'Laguardiacare@lagcc.cuny.edu', '718-482-5135', '')
 qc_pantry = cuny_pantry('Queens College', 'https://qcknightstable.org/', 'Student Union, Lower Level, 29', 'team@qcknightstable.org', '718-570-0393', '')
@@ -30,8 +30,6 @@ sj_pantry = cuny_pantry('School of Journalism', '', 'Student Affairs', 'anthony.
 sl_pantry = cuny_pantry('School of Law', '', 'Student Affairs', 'amanda.beltran@law.cuny.edu', '718-340-4204', '')
 y_pantry =  cuny_pantry('York College', 'https://www.york.cuny.edu/news/the-food-pantry-is-open--ready-to-serve-you', 'Room 3M02 –The Men’s Center', 'foodpantry@york.cuny.edu', '718-262-2008', '')
 csi_pantry = cuny_pantry('College of Staten Island', 'http://csitoday.com/2016/02/csi-food-pantry/', 'Office of Student Life in the Campus Center, 1C-201', 'studentlife@csi.cuny.edu', '718-982-3088', '')
-
-cuny_pantries = [bcc_pantry, hcc_pantry, lc_pantry, bc_pantry, kcc_pantry, mec_pantry, nct_pantry, bar_pantry, bmcc_pantry, ccny_pantry, gutt_pantry, hunt_pantry, jj_pantry, lcc_pantry, qc_pantry, sj_pantry, sl_pantry, y_pantry, csi_pantry]
 
 survey = ss.StreamlitSurvey("Survey Example - Advanced Usage")
 
@@ -79,3 +77,118 @@ if aid == "Food Insecurity":
                 st.write('Email: '+bar_pantry.email)
                 st.write('Phone: '+bar_pantry.phone)
                 st.write('Appointment: '+bar_pantry.appointment)
+        
+        elif college == "Borough of Manhattan Community College":
+                st.write('Website: '+bmcc_pantry.website)
+                st.write('Location: '+bmcc_pantry.location)
+                st.write('Email: '+bmcc_pantry.email)
+                st.write('Phone: '+bmcc_pantry.phone)
+                st.write('Appointment: '+bmcc_pantry.appointment)
+        
+        elif college == "Bronx Community College":
+                st.write('Website: '+bmcc_pantry.website)
+                st.write('Location: '+bmcc_pantry.location)
+                st.write('Email: '+bmcc_pantry.email)
+                st.write('Phone: '+bmcc_pantry.phone)
+                st.write('Appointment: '+bmcc_pantry.appointment)
+            
+        elif college == "Brooklyn College":
+                st.write('Website: '+bc_pantry.website)
+                st.write('Location: '+bc_pantry.location)
+                st.write('Email: '+bc_pantry.email)
+                st.write('Phone: '+bc_pantry.phone)
+                st.write('Appointment: '+bc_pantry.appointment)
+          
+        elif college == "City College of New York":
+                st.write('Website: '+ccny_pantry.website)
+                st.write('Location: '+ccny_pantry.location)
+                st.write('Email: '+ccny_pantry.email)
+                st.write('Phone: '+ccny_pantry.phone)
+                st.write('Appointment: '+ccny_pantry.appointment)
+            
+        elif college == "College of Staten Island":
+                st.write('Website: '+csi_pantry.website)
+                st.write('Location: '+csi_pantry.location)
+                st.write('Email: '+csi_pantry.email)
+                st.write('Phone: '+csi_pantry.phone)
+                st.write('Appointment: '+csi_pantry.appointment)
+           
+        elif college == "CUNY Graduate Center":
+                st.write('Please contact CUNY directly.')
+           
+        elif college == "CUNY School of Law":
+                st.write('Website: '+sl_pantry.website)
+                st.write('Location: '+sl_pantry.location)
+                st.write('Email: '+sl_pantry.email)
+                st.write('Phone: '+sl_pantry.phone)
+                st.write('Appointment: '+sl_pantry.appointment)
+
+        elif college == "Hostos Community College":
+                st.write('Website: '+hcc_pantry.website)
+                st.write('Location: '+hcc_pantry.location)
+                st.write('Email: '+hcc_pantry.email)
+                st.write('Phone: '+hcc_pantry.phone)
+                st.write('Appointment: '+hcc_pantry.appointment)
+
+        elif college == "Hunter College":
+                st.write('Website: '+hc_pantry.website)
+                st.write('Location: '+hc_pantry.location)
+                st.write('Email: '+hc_pantry.email)
+                st.write('Phone: '+hc_pantry.phone)
+                st.write('Appointment: '+hc_pantry.appointment)
+          
+        elif college == "John Jay College of Criminal Justice":
+                st.write('Website: '+jj_pantry.website)
+                st.write('Location: '+jj_pantry.location)
+                st.write('Email: '+jj_pantry.email)
+                st.write('Phone: '+jj_pantry.phone)
+                st.write('Appointment: '+jj_pantry.appointment)
+        
+        elif college == "Kingsborough Community College":
+                st.write('Website: '+kcc_pantry.website)
+                st.write('Location: '+kcc_pantry.location)
+                st.write('Email: '+kcc_pantry.email)
+                st.write('Phone: '+kcc_pantry.phone)
+                st.write('Appointment: '+kcc_pantry.appointment)
+            
+        elif college == "LaGuardia Community College":
+                st.write('Website: '+lcc_pantry.website)
+                st.write('Location: '+lcc_pantry.location)
+                st.write('Email: '+lcc_pantry.email)
+                st.write('Phone: '+lcc_pantry.phone)
+                st.write('Appointment: '+lcc_pantry.appointment)
+          
+        elif college == "Lehman College":
+                st.write('Website: '+lc_pantry.website)
+                st.write('Location: '+lc_pantry.location)
+                st.write('Email: '+lc_pantry.email)
+                st.write('Phone: '+lc_pantry.phone)
+                st.write('Appointment: '+lc_pantry.appointment)
+          
+        elif college == "Medgar Evers College":
+                st.write('Website: '+mec_pantry.website)
+                st.write('Location: '+mec_pantry.location)
+                st.write('Email: '+mec_pantry.email)
+                st.write('Phone: '+mec_pantry.phone)
+                st.write('Appointment: '+mec_pantry.appointment)
+        
+        elif college == "New York City College of Technology":
+                st.write('Website: '+nct_pantry.website)
+                st.write('Location: '+nct_pantry.location)
+                st.write('Email: '+nct_pantry.email)
+                st.write('Phone: '+nct_pantry.phone)
+                st.write('Appointment: '+nct_pantry.appointment)
+           
+        elif college == "Queens College":
+                st.write('Website: '+qc_pantry.website)
+                st.write('Location: '+qc_pantry.location)
+                st.write('Email: '+qc_pantry.email)
+                st.write('Phone: '+qc_pantry.phone)
+                st.write('Appointment: '+qc_pantry.appointment)
+            
+        elif college == "York College":
+                st.write('Website: '+y_pantry.website)
+                st.write('Location: '+y_pantry.location)
+                st.write('Email: '+y_pantry.email)
+                st.write('Phone: '+y_pantry.phone)
+                st.write('Appointment: '+y_pantry.appointment)
