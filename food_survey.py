@@ -12,16 +12,16 @@ class cuny_pantry:
 
 bcc_pantry = cuny_pantry('Bronx Community College', 
                          'https://www.bcc.cuny.edu/campus-resources/access-resource-center/food-pantry/', 
-                         'Access Resource Center office: Loew Hall 125', 
+                         'Access Resource Center Office: Loew Hall 125', 
                          'bcc.ARC@bcc.cuny.edu', 
-                         '718-289-5179', 
+                         '(718)289-5179', 
                          '')
 
 hcc_pantry = cuny_pantry('Hostos Community College', 
                          'https://www.hostos.cuny.edu/Programs/One-Stop-Resource-Center', 
                          'Hostos One Stop Center, Savoy Building (1st floor intake) D-101', 
                          'mcruz@hostos.cuny.edu', 
-                         '718-518-4141', 
+                         '(718)518-4141', 
                          '')
 
 lc_pantry = cuny_pantry('Lehman College', 
@@ -190,122 +190,207 @@ if aid == "Food Insecurity":
                     horizontal=True,
                 )
         
-        if college == "Baruch College":
-                st.write('Website: '+bar_pantry.website)
-                st.write('Location: '+bar_pantry.location)
-                st.write('Email: '+bar_pantry.email)
-                st.write('Phone: '+bar_pantry.phone)
-                st.write('Appointment: '+bar_pantry.appointment)
+        if college == "Bronx Community College":
+                st.write('[2024 Food Pantry Schedule](%s)' % 'https://www.bcc.cuny.edu/wp-content/uploads/2024/08/fall-2024-food-pantry-schedule-final-dd-1200-792x1024.jpg')
+                if bmcc_pantry.website:
+                        st.write('Website: '+bmcc_pantry.website)
+                if bmcc_pantry.location:
+                        st.write('Location: '+bmcc_pantry.location)
+                if bmcc_pantry.email:
+                        st.write('Email: '+bmcc_pantry.email)
+                if bmcc_pantry.phone:
+                        st.write('Phone: '+bmcc_pantry.phone)
+                if bmcc_pantry.appointment:
+                        st.write('[Make an appointment](%s)' % bmcc_pantry.appointment)        
+
+        elif college == "Baruch College":
+                if bar_pantry.website:
+                        st.write('Website: '+bar_pantry.website)
+                if bar_pantry.location:
+                        st.write('Location: '+bar_pantry.location)
+                if bar_pantry.email: 
+                        st.write('Email: '+bar_pantry.email)
+                if bar_pantry.phone:
+                        st.write('Phone: '+bar_pantry.phone)
+                if bar_pantry.appointment:
+                        st.write('[Make an appointment](%s)' % bar_pantry.appointment)
         
         elif college == "Borough of Manhattan Community College":
-                st.write('Website: '+bmcc_pantry.website)
-                st.write('Location: '+bmcc_pantry.location)
-                st.write('Email: '+bmcc_pantry.email)
-                st.write('Phone: '+bmcc_pantry.phone)
-                st.write('Appointment: '+bmcc_pantry.appointment)
-        
-        elif college == "Bronx Community College":
-                st.write('Website: '+bmcc_pantry.website)
-                st.write('Location: '+bmcc_pantry.location)
-                st.write('Email: '+bmcc_pantry.email)
-                st.write('Phone: '+bmcc_pantry.phone)
-                st.write('Appointment: '+bmcc_pantry.appointment)
-            
+                if bmcc_pantry.website:
+                        st.write('Website: '+bmcc_pantry.website)
+                if bmcc_pantry.location
+                        st.write('Location: '+bmcc_pantry.location)
+                if bmcc_pantry.email:
+                        st.write('Email: '+bmcc_pantry.email)
+                if bmcc_pantry.phone:
+                        st.write('Phone: '+bmcc_pantry.phone)
+                if bmcc_pantry.appointment:
+                        st.write('Appointment: '+bmcc_pantry.appointment)
+                    
         elif college == "Brooklyn College":
-                st.write('Website: '+bc_pantry.website)
-                st.write('Location: '+bc_pantry.location)
-                st.write('Email: '+bc_pantry.email)
-                st.write('Phone: '+bc_pantry.phone)
-                st.write('Appointment: '+bc_pantry.appointment)
-          
+                if bc_pantry.website:
+                        st.write('Website: '+bc_pantry.website)
+                if bc_pantry.location:
+                        st.write('Location: '+bc_pantry.location)
+                if bc_pantry.email: 
+                        st.write('Email: '+bc_pantry.email)
+                if bc_pantry.phone: 
+                        st.write('Phone: '+bc_pantry.phone)
+                if bc_pantry.appointment:
+                        st.write('Appointment: '+bc_pantry.appointment)
+        
         elif college == "City College of New York":
-                st.write('Website: '+ccny_pantry.website)
-                st.write('Location: '+ccny_pantry.location)
-                st.write('Email: '+ccny_pantry.email)
-                st.write('Phone: '+ccny_pantry.phone)
-                st.write('Appointment: '+ccny_pantry.appointment)
+                if ccny_pantry.website:
+                        st.write('Website: '+ccny_pantry.website)
+                if ccny_pantry.location:
+                        st.write('Location: '+ccny_pantry.location)
+                if ccny_pantry.email: 
+                        st.write('Email: '+ccny_pantry.email)
+                if ccny_pantry.phone:
+                        st.write('Phone: '+ccny_pantry.phone)
+                if ccny_pantry.appointment: 
+                        st.write('Appointment: '+ccny_pantry.appointment)
             
         elif college == "College of Staten Island":
-                if csi_pantry.
-                st.write('Website: '+csi_pantry.website)
-                st.write('Location: '+csi_pantry.location)
-                st.write('Email: '+csi_pantry.email)
-                st.write('Phone: '+csi_pantry.phone)
-                st.write('Appointment: '+csi_pantry.appointment)
+                if csi_pantry.website:
+                        st.write('Website: '+csi_pantry.website)
+                if csi_pantry.location:
+                        st.write('Location: '+csi_pantry.location)
+                if csi_pantry.email: 
+                        st.write('Email: '+csi_pantry.email)
+                if csi_pantry.phone: 
+                        st.write('Phone: '+csi_pantry.phone)
+                if csi_pantry.appointment
+                        st.write('Appointment: '+csi_pantry.appointment)
            
         elif college == "CUNY School of Law":
-                st.write('Website: '+sl_pantry.website)
-                st.write('Location: '+sl_pantry.location)
-                st.write('Email: '+sl_pantry.email)
-                st.write('Phone: '+sl_pantry.phone)
-                st.write('Appointment: '+sl_pantry.appointment)
+                if sl_pantry.website:
+                        st.write('Website: '+sl_pantry.website)
+                if sl_pantry.location:
+                        st.write('Location: '+sl_pantry.location)
+                if sl_pantry.email:
+                        st.write('Email: '+sl_pantry.email)
+                if sl_pantry.phone:
+                        st.write('Phone: '+sl_pantry.phone)
+                if sl_pantry.appointment:
+                        st.write('Appointment: '+sl_pantry.appointment)
 
         elif college == "Hostos Community College":
-                st.write('Website: '+hcc_pantry.website)
-                st.write('Location: '+hcc_pantry.location)
-                st.write('Email: '+hcc_pantry.email)
-                st.write('Phone: '+hcc_pantry.phone)
-                st.write('Appointment: '+hcc_pantry.appointment)
+                if hcc_pantry.website:
+                        st.write('Website: '+hcc_pantry.website)
+                if hcc_pantry.location:
+                        st.write('Location: '+hcc_pantry.location)
+                if hcc_pantry.email:
+                        st.write('Email: '+hcc_pantry.email)
+                if hcc_pantry.phone:
+                        st.write('Phone: '+hcc_pantry.phone)
+                if hcc_pantry.appointment: 
+                        st.write('Appointment: '+hcc_pantry.appointment)
 
         elif college == "Hunter College":
-                st.write('Website: '+hc_pantry.website)
-                st.write('Location: '+hc_pantry.location)
-                st.write('Email: '+hc_pantry.email)
-                st.write('Phone: '+hc_pantry.phone)
-                st.write('Appointment: '+hc_pantry.appointment)
+                if hc_pantry.website:
+                        st.write('Website: '+hc_pantry.website)
+                if hc_pantry.location:
+                        st.write('Location: '+hc_pantry.location)
+                if hc_pantry.email:
+                        st.write('Email: '+hc_pantry.email)
+                if hc_pantry.phone:
+                        st.write('Phone: '+hc_pantry.phone)
+                if hc_pantry.appointment:
+                        st.write('Appointment: '+hc_pantry.appointment)
           
         elif college == "John Jay College of Criminal Justice":
-                st.write('Website: '+jj_pantry.website)
-                st.write('Location: '+jj_pantry.location)
-                st.write('Email: '+jj_pantry.email)
-                st.write('Phone: '+jj_pantry.phone)
-                st.write('Appointment: '+jj_pantry.appointment)
+                if jj_pantry.website:
+                        st.write('Website: '+jj_pantry.website)
+                if jj_pantry.location:
+                        st.write('Location: '+jj_pantry.location)
+                if jj_pantry.email:
+                        st.write('Email: '+jj_pantry.email)
+                if jj_pantry.phone:
+                        st.write('Phone: '+jj_pantry.phone)
+                if jj_pantry.appointment:
+                        st.write('Appointment: '+jj_pantry.appointment)
         
         elif college == "Kingsborough Community College":
-                st.write('Website: '+kcc_pantry.website)
-                st.write('Location: '+kcc_pantry.location)
-                st.write('Email: '+kcc_pantry.email)
-                st.write('Phone: '+kcc_pantry.phone)
-                st.write('Appointment: '+kcc_pantry.appointment)
+                if kcc_pantry.website:
+                        st.write('Website: '+kcc_pantry.website)
+                if kcc_pantry.location:
+                        st.write('Location: '+kcc_pantry.location)
+                if kcc_pantry.email:
+                        st.write('Email: '+kcc_pantry.email)
+                if kcc_pantry.phone: 
+                        st.write('Phone: '+kcc_pantry.phone)
+                if kcc_pantry.appointment:
+                        st.write('Appointment: '+kcc_pantry.appointment)
             
         elif college == "LaGuardia Community College":
-                st.write('Website: '+lcc_pantry.website)
-                st.write('Location: '+lcc_pantry.location)
-                st.write('Email: '+lcc_pantry.email)
-                st.write('Phone: '+lcc_pantry.phone)
-                st.write('Appointment: '+lcc_pantry.appointment)
+                if lcc_pantry.website: 
+                        st.write('Website: '+lcc_pantry.website)
+                if lcc_pantry.location:
+                        st.write('Location: '+lcc_pantry.location)
+                if lcc_pantry.email:
+                        st.write('Email: '+lcc_pantry.email)
+                if lcc_pantry.phone:
+                        st.write('Phone: '+lcc_pantry.phone)
+                if lcc_pantry.appointment:
+                        st.write('Appointment: '+lcc_pantry.appointment)
           
         elif college == "Lehman College":
-                st.write('Website: '+lc_pantry.website)
-                st.write('Location: '+lc_pantry.location)
-                st.write('Email: '+lc_pantry.email)
-                st.write('Phone: '+lc_pantry.phone)
-                st.write('Appointment: '+lc_pantry.appointment)
+                if lc_pantry.website:
+                        st.write('Website: '+lc_pantry.website)
+                if lc_pantry.location:
+                        st.write('Location: '+lc_pantry.location)
+                if lc_pantry.email:
+                        st.write('Email: '+lc_pantry.email)
+                if lc_pantry.phone:
+                        st.write('Phone: '+lc_pantry.phone)
+                if lc_pantry.appointment:
+                        st.write('Appointment: '+lc_pantry.appointment)
           
         elif college == "Medgar Evers College":
-                st.write('Website: '+mec_pantry.website)
-                st.write('Location: '+mec_pantry.location)
-                st.write('Email: '+mec_pantry.email)
-                st.write('Phone: '+mec_pantry.phone)
-                st.write('Appointment: '+mec_pantry.appointment)
+                if mec_pantry.website:
+                        st.write('Website: '+mec_pantry.website)
+                if mec_pantry.location:
+                        st.write('Location: '+mec_pantry.location)
+                if mec_pantry.email:
+                        st.write('Email: '+mec_pantry.email)
+                if mec_pantry.phone:
+                        st.write('Phone: '+mec_pantry.phone)
+                if mec_pantry.appointment:
+                        st.write('Appointment: '+mec_pantry.appointment)
         
         elif college == "New York City College of Technology":
-                st.write('Website: '+nct_pantry.website)
-                st.write('Location: '+nct_pantry.location)
-                st.write('Email: '+nct_pantry.email)
-                st.write('Phone: '+nct_pantry.phone)
-                st.write('Appointment: '+nct_pantry.appointment)
+                if nct_pantry.website:
+                        st.write('Website: '+nct_pantry.website)
+                if nct_pantry.location:
+                        st.write('Location: '+nct_pantry.location)
+                if nct_pantry.email:
+                        st.write('Email: '+nct_pantry.email)
+                if nct_pantry.phone:
+                        st.write('Phone: '+nct_pantry.phone)
+                if nct_pantry.appointment:
+                        st.write('Appointment: '+nct_pantry.appointment)
            
         elif college == "Queens College":
-                st.write('Website: '+qc_pantry.website)
-                st.write('Location: '+qc_pantry.location)
-                st.write('Email: '+qc_pantry.email)
-                st.write('Phone: '+qc_pantry.phone)
-                st.write('Appointment: '+qc_pantry.appointment)
+                if qc_pantry.website:
+                        st.write('Website: '+qc_pantry.website)
+                if qc_pantry.location:
+                        st.write('Location: '+qc_pantry.location)
+                if qc_pantry.email:
+                        st.write('Email: '+qc_pantry.email)
+                if qc_pantry.phone:
+                        st.write('Phone: '+qc_pantry.phone)
+                if qc_pantry.appointment:
+                        st.write('Appointment: '+qc_pantry.appointment)
             
         elif college == "York College":
-                st.write('Website: '+y_pantry.website)
-                st.write('Location: '+y_pantry.location)
-                st.write('Email: '+y_pantry.email)
-                st.write('Phone: '+y_pantry.phone)
-                st.write('Appointment: '+y_pantry.appointment)
+                if y_pantry.website:
+                        st.write('Website: '+y_pantry.website)
+                if y_pantry.location:
+                        st.write('Location: '+y_pantry.location)
+                if y_pantry.email:
+                        st.write('Email: '+y_pantry.email)
+                if y_pantry.phone: 
+                        st.write('Phone: '+y_pantry.phone)
+                if y_pantry.appointment:
+                        st.write('Appointment: '+y_pantry.appointment)
