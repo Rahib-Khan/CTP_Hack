@@ -1,11 +1,12 @@
 import streamlit as st
 import streamlit_survey as ss
-from utilities import aid_options, college_emails
+from utilities import aid_options, college_emails, crisis_options, get_counseling_info
 
 survey = ss.StreamlitSurvey("Survey Example - Advanced Usage")
 
 st.title("Student Aid Questionaire")
 
+counseling_info = get_counseling_info()
 colleges = list(college_emails.keys())
 
 def shake(url):
@@ -141,7 +142,39 @@ def show_nicotine_program():
         ''', unsafe_allow_html=True)
     else:
         st.write("No nicotine program URL available for your selected college.")
-
+def mental_health_survey():
+    if aid == "Mental Health":
+        st.write("Are you seeking immediate crisis intervention?")
+        crisis_status = survey.radio("Crisis Intervention",
+                                     options=crisis_options,
+                                     index=None,
+                                     label_visibility="collapsed",
+                                     horizontal=True
+                                     )
+        if crisis_status == 'Yes':
+            st.write("Please seek immediate help by reaching out to CUNY's crisis text line and texting 'CUNY' to "
+                     "741741.")
+        elif crisis_status == 'No':
+            st.write("What CUNY college are you currently attending?")
+            college = survey.radio("College",
+                                   options=colleges,
+                                   index=None,
+                                   label_visibility="collapsed",
+                                   horizontal=True,
+                                   )
+            if college:
+                st.write(f"Listed below is {college}'s counseling center which provides information about recieving "
+                         f"essential mental health services including therapy, group support, self-help resources, "
+                         f"and more!")
+                center_url = counseling_info[college]['URL']
+                address = counseling_info[college]['Address']
+                contact_number = counseling_info[college]['Number']
+                contact_email = counseling_info[college]['Email']
+                st.write(f"[{college}'s Counseling Center Website](%s)" % center_url)
+                st.write(f"Located at: {address}")
+                st.write(f"Center Contact Number: {contact_number}")
+                st.write(f"Center Contact Email: {contact_email}")
+                print(colleges)
 
 st.write("What Type of Aid Are you looking for?")
 aid = survey.radio("Issues",
@@ -1043,3 +1076,4 @@ if aid == "Disability Services":
             york_disability_url = "https://www.york.cuny.edu/csd"
             st.write("Here is the Center for Students with Disabilities at York College(%s)" % york_disability_url)
 
+mental_health_survey()
