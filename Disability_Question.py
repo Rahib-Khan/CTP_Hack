@@ -1,6 +1,5 @@
 import streamlit as st
 import streamlit_survey as ss
-import First
 
 survey = ss.StreamlitSurvey("Survey Example - Advanced Usage")
 
