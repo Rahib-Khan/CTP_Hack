@@ -1,6 +1,7 @@
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 import re
+import streamlit as st
 
 centers_url_string = 'https://www.cuny.edu/current-students/student-affairs/student-services/counseling/#counseling'
 
@@ -46,6 +47,7 @@ def extract_phone_number(text):
     return match.group() if match else None
 
 
+@st.cache_data
 def get_counseling_info():
     counseling_data = {}
     with sync_playwright() as p:
