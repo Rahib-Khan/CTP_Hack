@@ -21,27 +21,35 @@ if aid == "Health And Wellness":
     if health == "Campus Health Services":
         st.write("What College do you go to?")
         college = survey.radio("College",
-                options = [
-        "Baruch College",
-        "Borough of Manhattan Community College",
-        "Bronx Community College",
-        "Brooklyn College",
-        "City College of New York",
-        "College of Staten Island",
-        "CUNY Graduate Center",
-        "CUNY School of Law",
-        "Hostos Community College",
-        "Hunter College",
-        "John Jay College of Criminal Justice",
-        "Kingsborough Community College",
-        "LaGuardia Community College",
-        "Lehman College",
-        "Medgar Evers College",
-        "New York City College of Technology",
-        "Queens College",
-        "York College", 
-        "Other"
-    ]
+                    options = [
+            "Baruch College",
+            "Borough of Manhattan Community College",
+            "Bronx Community College",
+            "Brooklyn College",
+            "City College of New York",
+            "College of Staten Island",
+            "CUNY School of Labor and Urban Studies",
+            "CUNY School of Professional Studies",
+            "CUNY School of Public Health",
+            "Guttman Community College",
+            "Hostos Community College",
+            "Hunter College",
+            "John Jay College of Criminal Justice",
+            "Kingsborough Community College",
+            "LaGuardia Community College",
+            "Lehman College",
+            "Macaulay Honors College",
+            "Medgar Evers College",
+            "New York City College of Technology",
+            "Queens College",
+            "Queensborough Community College",
+            "York College"
+        ]
+        ,
+                    index=None,
+                    label_visibility="hidden",
+                    horizontal=True,
+                )
         if college == "Baruch College":
             st.write("Which School of Baruch are you apart of?")
             baruch = survey.radio("Baruch Schools",
