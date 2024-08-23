@@ -19,20 +19,14 @@ def no_housing_resource():
 
 #Housing Instability Questionnaires
 if aid == "Housing Instability":
-    st.write("Would you like to be connected to NYC housing programs or CUNY programs?")
-    confirm = survey.radio(
-                    "Confirm",
-                    options=["NYC Housing Programs", "CUNY Programs"],
-                    index= None,
-                    label_visibility="collapsed",
-                    horizontal=True,
-                )
+    confirm1 = survey.checkbox("CNYC Housing Programs")
+    confirm2 = survey.checkbox("CUNY Programs")
     
-    if confirm == "NYC Housing Programs":
+    if confirm1:
         nyc_housing_url = "https://www.healthycuny.org/resources-housing-homelessness"
         st.write("Check out this URL(%s)" % nyc_housing_url)
     
-    elif confirm == "CUNY Programs":
+    if confirm2:
         st.write("What College do you go to?")
         college = survey.radio("College",
                     options = [
