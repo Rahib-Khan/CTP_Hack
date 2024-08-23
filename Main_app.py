@@ -836,7 +836,7 @@ if aid == "Career Development":
 
 #Housing Instability Questionnaires
 if aid == "Housing Instability":
-    confirm1 = survey.checkbox("CNYC Housing Programs")
+    confirm1 = survey.checkbox("NYC Housing Programs")
     confirm2 = survey.checkbox("CUNY Programs")
     
     if confirm1:

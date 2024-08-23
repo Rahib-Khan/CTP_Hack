@@ -52,25 +52,25 @@ if aid == "Health And Wellness":
                 )
         if college == "Baruch College":
             url = "http://www.baruch.cuny.edu/studentaffairs/healthServices.htm"
-            st.write("The Career Center at Borough of Manhattan Community College is Called the [Center for Career Development](%s)" % url)
-            st.write("The Center is located at 199 Chambers Street Room S-342 New York, NY 10007")
-            st.write("Center Number: 212-220-8170")
-            st.write("You can email them at career@bmcc.cuny.edu")
+            st.write("The Health Center at Baruch College is Called the [Baruch College Health Services](%s)" % url)
+            st.write("The Center is located at 138 E. 26th Street, 1st Fl. New York, NY 10010")
+            st.write("Center Number: 646-312-2040")
+            st.write("You can email them at StudentHealthCareCenter@baruch.cuny.edu")
             
 
         elif college == "Borough of Manhattan Community College":
             url = "https://www.bmcc.cuny.edu/student-affairs/health-services/"
-            st.write("The Career Center at Borough of Manhattan Community College is Called the [Center for Career Development](%s)" % url)
-            st.write("The Center is located at 199 Chambers Street Room S-342 New York, NY 10007")
-            st.write("Center Number: 212-220-8170")
-            st.write("You can email them at career@bmcc.cuny.edu")
+            st.write("The Health Center at Borough of Manhattan Community College is Called the [BMCC Health Services](%s)" % url)
+            st.write("The Center is located at 199 Chambers Street Room N-303 New York, NY 10007")
+            st.write("Center Number: 212-220-8255")
+            st.write("You can email them at healthservices@bmcc.cuny.edu")
             
         elif college == "Bronx Community College":
-            url = "http://www.bcc.cuny.edu/services/health-services/"
-            st.write("The Career Center at Bronx Community College is Called the [The Office of Career Development](%s)" % url)
-            st.write("The Center is located at Snow Hall, First Floor 2155 University Avenue Bronx, NY 10453")
-            st.write("Center Number: 718-220-7546")
-            st.write("You can email them at Careerdevelopment@bcc.cuny.edu ")
+           url = "https://www.bmcc.cuny.edu/student-affairs/health-services/"
+            st.write("The Health Center at Borough of Manhattan Community College is Called the [BMCC Health Services](%s)" % url)
+            st.write("The Center is located at 199 Chambers Street Room N-303 New York, NY 10007")
+            st.write("Center Number: 212-220-8255")
+            st.write("You can email them at healthservices@bmcc.cuny.edu")
         elif college == "Brooklyn College":
             url = "https://www.brooklyn.cuny.edu/web/about/offices/studentaffairs/health-wellness/healthclinic.php"
             st.write("The Career Center at Brooklyn College is Called the [Magner Career Center](%s)" % url)
@@ -142,68 +142,68 @@ if aid == "Health And Wellness":
             st.write("You can email them at careers@jjay.cuny.edu")
 
         elif college == "Kingsborough Community College":
-            url = "http://www.kingsborough.edu/career/"
+            url = "http://www.kbcc.cuny.edu/healthservices/index.html"
             st.write("The Career Center at Kingsborough Community College is Called the [Center for Career Development & Experiential Learning](%s)" % url)
             st.write("The Center is located at Room C201 2001 Oriental Boulevard Brooklyn, NY 11235")
             st.write("Center Number: 718-368-5115")
             st.write("You can email them at careerdevelopment@kbcc.cuny.edu")
-            shake("https://kbcc-cuny.joinhandshake.com/login?ref=app-domain")
+
         elif college == "LaGuardia Community College":
-            url = "http://www.laguardia.cuny.edu/careerservices/"
+            url = "https://www.laguardia.edu/healthservices/"
             st.write("The Career Center at LaGuardia Community College is Called the [Center for Career & Professional Development](%s)" % url)
             st.write("The Center is located at 31-10 Thomson Avenue Room B114 Long Island City, NY 11101")
             st.write("Center Number: 718-482-5235")
             st.write("You can email them at career@lagcc.cuny.edu")
-            shake("https://app.joinhandshake.com/login")
+
         elif college == "Lehman College":
-            url = "http://www.lehman.edu/career-services/"
+            url = "http://www.lehman.cuny.edu/student-health-center/clinical-services-fees.php"
             st.write("The Career Center at Lehman College is Called the [Career Exploration & Development Center](%s)" % url)
             st.write("The Center is located at 250 Bedford Park Blvd. West, Shuster Hall, Room 254 Shuster Hall, Room 254 Bronx, NY 10468")
             st.write("Center Number: 718-960-8366")
             st.write("You can email them at career.services@lehman.cuny.edu")
-            shake("https://lehmancuny.joinhandshake.com/login?ref=app-domain")
+
         elif college == "Macaulay Honors College":
-            url = "https://macaulay.cuny.edu/after-macaulay/career-development/"
+            url = "https://www.cuny.edu/current-students/student-affairs/student-services/health-services/#healthservices:~:text=Mental%20Health%20%26%20Wellness%20Center"
             st.write("The Career Center at Macaulay Honors College is Called the [Office of Career Development](%s)" % url)
             st.write("The Center is located at 35 West 67th Street New York, NY 10023")
             st.write("Center Number: 212-729-2947")
             st.write("You can email them at internships@mhc.cuny.edu")
-            shake("https://mhc.joinhandshake.com/login?ref=app-domain")
+ 
         elif college == "Medgar Evers College":
-            url = "https://ares.mec.cuny.edu/student-affairs/career-management-services/"
+            url = "https://www.mec.cuny.edu/student-success/health-services/"
             st.write("The Career Center at Medgar Evers College is Called the [Office of Career Management Services](%s)" % url)
             st.write("The Center is located at Student Services Building1637 Bedford Avenue, Room S302 Brooklyn, NY 11225")
             st.write("Center Number: 718-270-6055")
             st.write("You can email them at CareerServices@mec.cuny.edu")
-            shake("https://app.joinhandshake.com/login")
+
         elif college == "New York City College of Technology":
-            url = "http://www.citytech.cuny.edu/pdc/"
+            url = "https://www.citytech.cuny.edu/wellness-center/"
             st.write("The Career Center at New York City College of Technology is Called the [Professional Development Center](%s)" % url)
             st.write("The Center is located at Room L-114 250 Jay Street Brooklyn, New York 11201")
             st.write("Center Number: 718-260-5050")
             st.write("You can email them at pdc@citytech.cuny.edu")
-            shake("https://citytech.joinhandshake.com/login?ref=app-domain")
+
         elif college == "Queens College":
-            url = "https://www.qc.cuny.edu/academics/cei/"
+            url = "https://www.qc.cuny.edu/health/"
             st.write("The Career Center at Queens College is Called the [Center for Career Engagement and Internships](%s)" % url)
             st.write("The Center is located at 65-30 Kissena Boulevard Frese Hall, Room 213 Flushing, NY 11367")
             st.write("Center Number: 718-997-4465")
             st.write("You can email them at qc_career@qc.cuny.edu")
-            shake("https://qc.joinhandshake.com/login?ref=app-domain")
+
         elif college == "Queensborough Community College":
-            url = "http://www.qcc.cuny.edu/careerservices/"
+            url = "https://www.cuny.edu/current-students/student-affairs/student-services/health-services/#healthservices:~:text=Queensborough%20Community%20College%20Health%20Services"
             st.write("The Career Center at Queensborough Community College is Called the [Career Services](%s)" % url)
             st.write("The Center is located at Library Building, L-429222-05, 56th Avenue Bayside, NY 11364")
             st.write("Center Number: 718-631-6297")
             st.write("You can email them at careerservices@qcc.cuny.edu")
-            shake("https://cunyqcc.joinhandshake.com/login?ref=app-domain")
+
         elif college == "York College":
-            url = "http://york.cuny.edu/student-development/career-services"
+            url = "https://www.york.cuny.edu/health"
             st.write("The Career Center at York College is Called the [The Office of Career Services](%s)" % url)
             st.write("The Center is located at 94-20 Guy Brewer Boulevard Room #3E03 Jamaica, NY 11451")
             st.write("Center Number: 718-262-2282")
             st.write("You can email them at career@york.cuny.edu")
-            shake("https://app.joinhandshake.com/login")
+
 
     if health == "Health Insurance":
     
