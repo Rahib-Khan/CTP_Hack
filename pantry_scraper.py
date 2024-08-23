@@ -3,10 +3,29 @@ from bs4 import SoupStrainer
 import requests
 import re
 
+CUNY_PANTRIES_WEBSITE = 'https://www.healthycuny.org/cuny-food-pantries'
+
+response = requests.get(CUNY_PANTRIES_WEBSITE)
+if response.ok == False:
+    print("CUNY Food Pantries website is down.")
+
+cuny_pantries_html = response.text
+
+hrefs = SoupStrainer('a', href=True)
+hrefs_html = BeautifulSoup(cuny_pantries_html, 'lxml', parse_only=hrefs)
+
+websites_html = hrefs_html.find_all(href=re.compile('https://'))
+
+websites = []
+for website in websites_html:
+    websites.append(website.get('href'))
+
+print(websites)
+
 class cuny_pantry:
-    def __init__(self, college, campus_website, location, email, phone):
+    def __init__(self, college, website, location, email, phone):
         self.college = college
-        self.campus_website = campus_website
+        self.website = website
         self.location = location
         self.email = email
         self.phone = phone
@@ -33,18 +52,3 @@ y_pantry =  cuny_pantry('York College', '', '', '', '')
 csi_pantry = cuny_pantry('College of Staten Island', '', '', '', '')
 
 cuny_pantries = [bcc_pantry, hcc_pantry, lc_pantry, bc_pantry, kcc_pantry, mec_pantry, nct_pantry, bar_pantry, bmcc_pantry, ccny_pantry, gutt_pantry, hunt_pantry, jj_pantry, lcc_pantry, qc_pantry, sj_pantry, sl_pantry, y_pantry, csi_pantry]
-
-CUNY_PANTRIES_WEBSITE = 'https://www.healthycuny.org/cuny-food-pantries'
-
-response = requests.get(CUNY_PANTRIES_WEBSITE)
-if response.ok == False:
-    print("CUNY Food Pantries website is down.")
-cuny_pantries_html = response.text
-
-a_tags = SoupStrainer('a')
-
-pantries_a_tags = BeautifulSoup(cuny_pantries_html, 'lxml', parse_only=a_tags)
-pantries_emails = pantries_a_tags.select('a[href^="mailto:"]')
-#pantries_telephones = pantries_a_tags.select('a[href^="tel:"]')
-print(pantries_emails)
-#print(pantries_telephones)
