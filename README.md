@@ -1,4 +1,5 @@
-# CTP_Hack
+# CTP_Hack: CUNY Student Aid Questionnaire by Team 0001
 
-Our project aims to assist CUNY students in finding essential resources by having them complete a brief questionnaire detailing the type of aid they need. Based on their responses and the specific CUNY college they attend, the system provides tailored links to relevant support services, making it easier for students to access the resources they need.
+Our project aims to assist CUNY students in finding essential resources by having them complete a brief questionnaire detailing the type of aid they need. Based on their responses and the specific CUNY college they attend, the system provides tailored links, contacts, phone numbers, and more to relevant support services, making it easier for students to access the resources they need.
 
+Created by Rahib Khandaker, Jasminder Garcha, Anthony Jerez, and Lauren Ramroop
