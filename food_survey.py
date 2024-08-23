@@ -14,14 +14,14 @@ bcc_pantry = cuny_pantry('Bronx Community College',
                          'https://www.bcc.cuny.edu/campus-resources/access-resource-center/food-pantry/', 
                          'Access Resource Center Office: Loew Hall 125', 
                          'bcc.ARC@bcc.cuny.edu', 
-                         '(718)289-5179', 
+                         '718-289-5179', 
                          '')
 
 hcc_pantry = cuny_pantry('Hostos Community College', 
                          'https://www.hostos.cuny.edu/Programs/One-Stop-Resource-Center', 
                          'Hostos One Stop Center, Savoy Building (1st floor intake) D-101', 
                          'mcruz@hostos.cuny.edu', 
-                         '(718)518-4141', 
+                         '718-518-4141', 
                          '')
 
 lc_pantry = cuny_pantry('Lehman College', 
@@ -138,7 +138,7 @@ sl_pantry = cuny_pantry('School of Law',
 
 y_pantry =  cuny_pantry('York College', 
                         'https://www.york.cuny.edu/news/the-food-pantry-is-open--ready-to-serve-you', 
-                        'Room 3M02 –The Men’s Center', 
+                        'Room 3M02 –The Men’s Center',
                         'foodpantry@york.cuny.edu', 
                         '718-262-2008', 
                         '')
@@ -223,7 +223,7 @@ if aid == "Food Insecurity":
                 if bmcc_pantry.phone:
                         st.write('Phone: '+bmcc_pantry.phone)
                 if bmcc_pantry.appointment:
-                        st.write('Appointment: '+bmcc_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % bmcc_pantry.appointment)        
                     
         elif college == "Brooklyn College":
                 if bc_pantry.website:
@@ -235,7 +235,7 @@ if aid == "Food Insecurity":
                 if bc_pantry.phone: 
                         st.write('Phone: '+bc_pantry.phone)
                 if bc_pantry.appointment:
-                        st.write('Appointment: '+bc_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % bc_pantry.appointment)        
         
         elif college == "City College of New York":
                 if ccny_pantry.website:
@@ -247,7 +247,7 @@ if aid == "Food Insecurity":
                 if ccny_pantry.phone:
                         st.write('Phone: '+ccny_pantry.phone)
                 if ccny_pantry.appointment: 
-                        st.write('Appointment: '+ccny_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % ccny_pantry.appointment)        
             
         elif college == "College of Staten Island":
                 if csi_pantry.website:
@@ -259,7 +259,7 @@ if aid == "Food Insecurity":
                 if csi_pantry.phone: 
                         st.write('Phone: '+csi_pantry.phone)
                 if csi_pantry.appointment:
-                        st.write('Appointment: '+csi_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % csi_pantry.appointment)        
            
         elif college == "CUNY School of Law":
                 if sl_pantry.website:
@@ -271,7 +271,7 @@ if aid == "Food Insecurity":
                 if sl_pantry.phone:
                         st.write('Phone: '+sl_pantry.phone)
                 if sl_pantry.appointment:
-                        st.write('Appointment: '+sl_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % sl_pantry.appointment)        
 
         elif college == "Hostos Community College":
                 if hcc_pantry.website:
@@ -283,7 +283,7 @@ if aid == "Food Insecurity":
                 if hcc_pantry.phone:
                         st.write('Phone: '+hcc_pantry.phone)
                 if hcc_pantry.appointment: 
-                        st.write('Appointment: '+hcc_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % hcc_pantry.appointment)        
 
         elif college == "Hunter College":
                 if hc_pantry.website:
@@ -295,7 +295,7 @@ if aid == "Food Insecurity":
                 if hc_pantry.phone:
                         st.write('Phone: '+hc_pantry.phone)
                 if hc_pantry.appointment:
-                        st.write('Appointment: '+hc_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % hc_pantry.appointment)        
           
         elif college == "John Jay College of Criminal Justice":
                 if jj_pantry.website:
@@ -307,7 +307,7 @@ if aid == "Food Insecurity":
                 if jj_pantry.phone:
                         st.write('Phone: '+jj_pantry.phone)
                 if jj_pantry.appointment:
-                        st.write('Appointment: '+jj_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % jj_pantry.appointment)        
         
         elif college == "Kingsborough Community College":
                 if kcc_pantry.website:
@@ -319,7 +319,7 @@ if aid == "Food Insecurity":
                 if kcc_pantry.phone: 
                         st.write('Phone: '+kcc_pantry.phone)
                 if kcc_pantry.appointment:
-                        st.write('Appointment: '+kcc_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % kcc_pantry.appointment)        
             
         elif college == "LaGuardia Community College":
                 if lcc_pantry.website: 
@@ -331,7 +331,7 @@ if aid == "Food Insecurity":
                 if lcc_pantry.phone:
                         st.write('Phone: '+lcc_pantry.phone)
                 if lcc_pantry.appointment:
-                        st.write('Appointment: '+lcc_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % lcc_pantry.appointment)        
           
         elif college == "Lehman College":
                 if lc_pantry.website:
@@ -343,7 +343,7 @@ if aid == "Food Insecurity":
                 if lc_pantry.phone:
                         st.write('Phone: '+lc_pantry.phone)
                 if lc_pantry.appointment:
-                        st.write('Appointment: '+lc_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % lc_pantry.appointment)        
           
         elif college == "Medgar Evers College":
                 if mec_pantry.website:
@@ -355,7 +355,7 @@ if aid == "Food Insecurity":
                 if mec_pantry.phone:
                         st.write('Phone: '+mec_pantry.phone)
                 if mec_pantry.appointment:
-                        st.write('Appointment: '+mec_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % mec_pantry.appointment)        
         
         elif college == "New York City College of Technology":
                 if nct_pantry.website:
@@ -367,7 +367,7 @@ if aid == "Food Insecurity":
                 if nct_pantry.phone:
                         st.write('Phone: '+nct_pantry.phone)
                 if nct_pantry.appointment:
-                        st.write('Appointment: '+nct_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % nct_pantry.appointment)        
            
         elif college == "Queens College":
                 if qc_pantry.website:
@@ -379,7 +379,7 @@ if aid == "Food Insecurity":
                 if qc_pantry.phone:
                         st.write('Phone: '+qc_pantry.phone)
                 if qc_pantry.appointment:
-                        st.write('Appointment: '+qc_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % qc_pantry.appointment)        
             
         elif college == "York College":
                 if y_pantry.website:
@@ -391,4 +391,4 @@ if aid == "Food Insecurity":
                 if y_pantry.phone: 
                         st.write('Phone: '+y_pantry.phone)
                 if y_pantry.appointment:
-                        st.write('Appointment: '+y_pantry.appointment)
+                        st.write('[Make an appointment](%s)' % y_pantry.appointment)
