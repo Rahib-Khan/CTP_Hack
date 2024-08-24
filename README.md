@@ -5,10 +5,10 @@ Our project aims to assist CUNY students in finding essential resources by havin
 We used Streamlit, an open-source Python framework, to host our questionnaires on website. The questionnaires are user-friendly, where users simply have to select what college they attend and what type of aid is required.
 
 <p float="left">
-<img src="App Screenshots/ScreenShot 1.png" width="450"/>
-<img src="App Screenshots/Screenshot 2.png" width="450"/> 
-<img src="App Screenshots/Screenshot 3.png" width="450"/> 
-<img src="App Screenshots/Screenshot 4.png" width="450"/> 
+<img src="App Screenshots/ScreenShot 1.png" width="500"/>
+<img src="App Screenshots/Screenshot 2.png" width="500"/> 
+<img src="App Screenshots/Screenshot 3.png" width="500"/> 
+<img src="App Screenshots/Screenshot 4.png" width="500"/> 
 </p>
 
 [Powerpoint](https://docs.google.com/presentation/d/1P798ktTTBiFoBrsFoe3SscNlgFK0MUH1k0dd30z1IwI/edit#slide=id.g2f555cf5034_0_52)
