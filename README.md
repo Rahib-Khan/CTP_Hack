@@ -8,6 +8,7 @@ We used Streamlit, an open-source Python framework, to host our questionnaires o
 <img src="App Screenshots/ScreenShot 1.png" width="500"/>
 <img src="App Screenshots/Screenshot 2.png" width="500"/> 
 <img src="App Screenshots/Screenshot 3.png" width="500"/> 
+<img src="App Screenshots/Screenshot 4.png" width="500"/> 
 </p>
 
 Created by Rahib Khandaker, Jasminder Garcha, Anthony Jerez, and Lauren Ramroop
